@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#a4988b, white);
+  color: rgb(14, 49, 49);
+  opacity: 0.8;
+  height: 4rem;
+  padding: 2rem;
+}
+
+.headerPics {
+  mix-blend-mode: multiply;
+  padding-left: 4%;
+  padding-right: 4%;
+}
