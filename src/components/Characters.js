@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import CharacterItem from "./CharacterItem";
+import CharacterForm from "../CharacterForm";
 
 function Characters() {
     const [characters, setCharacters] = useState([]);
+    const [showForm, setShowForm] = useState(false);
 
     useEffect(() => {
         fetch("http://localhost:3001/characters")
@@ -22,8 +24,10 @@ function Characters() {
     })
 
     return(
-        <div>
-            <h1 className="pageHeaders">Meet the Cast of Characters</h1>
+        <div className="characterPage">
+            <h1 id="characterHeader">Meet the Cast of Characters</h1>
+            <button onClick={() => setShowForm(!showForm)}>Add A Missing Character</button>
+            {showForm ? <CharacterForm /> : null}
             {renderCharacters}
         </div>
     );

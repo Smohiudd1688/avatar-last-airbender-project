@@ -1,9 +1,31 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 
 function Home() {
+    const history = useHistory();
+
+    function handleCharacterClick() {
+        history.push('/characters');
+    }
+
+    function handleNationClick() {
+        history.push('/nations');
+    } 
+
     return(
         <div>
-            <h2 className="pageHeaders">Quick Summary</h2>
+            <img
+                onClick={handleCharacterClick}
+                className="homeImages"
+                src="https://hips.hearstapps.com/hmg-prod/images/mgid-arc-content-nick-1590088176.jpeg"
+                alt="Map of the Four Nations"
+            />
+            <img
+                onClick={handleNationClick}
+                className="homeImages"
+                src="https://preview.redd.it/czhksazlo9361.jpg?auto=webp&s=84417b26926ff148aa39435a75f1e052dd9b44a1"
+                alt="Map of the Four Nations"
+            />
             <p className="homePara"> 
                 The world is divided into four elemental nations: The Northern and Southern Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. 
                 The Avatar upholds the balance between the nations, but everything changed when the Fire Nation invaded. Only the Avatar, master of all four elements, 
@@ -11,9 +33,9 @@ function Home() {
                 Together they must help Aang master the elements and save the world.
             </p>
             <img
-                id="map"
-                src="https://preview.redd.it/czhksazlo9361.jpg?auto=webp&s=84417b26926ff148aa39435a75f1e052dd9b44a1"
-                alt="Map of the Four Nations"
+                className="backgroundPic"
+                src="https://images.squarespace-cdn.com/content/v1/5ecffbcb034857480517457a/1590688716161-D5WH08VB9YJ57VJOPQPL/ayi-taishan-village1_web.jpg"
+                alt="The Gang Relaxing"
             />
             <h2 className="pageHeaders">Show Details</h2>
             <p className="homePara"> 
