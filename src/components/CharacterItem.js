@@ -20,7 +20,7 @@ function CharacterItem({id, name, image, nation, bender, about}) {
             </div>
             <p className="characterDescription">
                 <strong id="nameHeader">{name}</strong><br></br><br></br>
-                <strong>Nation:</strong> {nation} nation<br></br>
+                <strong>Nation:</strong> {nation} Nation<br></br>
                 <strong>Type of Bender: </strong> {bender}<br></br>
                 {about}
             </p>
