@@ -21,13 +21,17 @@ function Characters() {
             bender={character.bender}
             about={character.about}
         />
-    })
+    });
+
+    function handleNewCharacterSubmit(newCharacter) {
+        setCharacters([...characters, newCharacter]);
+    }
 
     return(
         <div className="characterPage">
             <h1 id="characterHeader">Meet the Cast of Characters</h1>
-            <button onClick={() => setShowForm(!showForm)}>Add A Missing Character</button>
-            {showForm ? <CharacterForm /> : null}
+            <button onClick={() => setShowForm(!showForm)}>{showForm ? "Don't Add Character": "Add A Missing Character"}</button>
+            {showForm ? <CharacterForm onNewCharacterSubmit={handleNewCharacterSubmit} setShowForm={setShowForm} /> : null}
             {renderCharacters}
         </div>
     );

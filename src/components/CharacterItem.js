@@ -12,14 +12,14 @@ function CharacterItem({id, name, image, nation, bender, about}) {
     } else if (nation.toLowerCase() === "fire") {
         styles.boxShadow = '20px 10px 10px #ffcccc'
     }
-    
+
     return(
         <div className="characterCard" style={styles}>
             <div className="characterImage">
                 <img src={image} alt={name} />
             </div>
             <p className="characterDescription">
-                <h2>{name}</h2>
+                <strong id="nameHeader">{name}</strong><br></br><br></br>
                 <strong>Nation:</strong> {nation} nation<br></br>
                 <strong>Type of Bender: </strong> {bender}<br></br>
                 {about}
