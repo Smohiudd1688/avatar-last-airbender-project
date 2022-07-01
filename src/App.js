@@ -10,7 +10,7 @@ import {nationData} from "./components/NationData"
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  console.log(nationData);
+
   useEffect(() => {
     fetch("http://localhost:3001/characters")
     .then(response => response.json())
@@ -33,6 +33,9 @@ function App() {
         </Route>
         <Route path="/nations/air">
           <NationPage characters={characters} nationClicked={nationData.air} />
+        </Route>
+        <Route path="/nations/water">
+          <NationPage characters={characters} nationClicked={nationData.water} />
         </Route>
         <Route exact path="/" >
           <Home />

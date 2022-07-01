@@ -12,6 +12,10 @@ function Nations() {
         history.push("/nations/air");
     }
 
+    function handleWaterClick() {
+        history.push("/nations/water");
+    }
+
     return(
         <div className="nations">
             <div className="firstRow">
@@ -39,7 +43,7 @@ function Nations() {
                 </div>
             </div>
             <div className="secondRow">
-                <div id="waterN"  className="firstColumn">
+                <div onClick={handleWaterClick} id="waterN" className="firstColumn">
                     <h2>Water Tribes</h2>
                     <img
                         alt="Northern Water Tribe"
