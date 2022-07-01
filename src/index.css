@@ -263,6 +263,10 @@ textarea {
   background-image: linear-gradient(white, rgb(139, 159, 158));
 }
 
+#waterPage {
+  background-image: linear-gradient(white, rgb(8, 109, 149));
+}
+
 .nationHeaders {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2.5rem;
