@@ -255,12 +255,12 @@ textarea {
   opacity: .7;
 }
 
-.firePage {
+#firePage {
   background-image: linear-gradient(white, rgb(100, 7, 7));
 }
 
-.firePage img {
-  justify-content: center;
+#airPage {
+  background-image: linear-gradient(white, rgb(139, 159, 158));
 }
 
 .nationHeaders {
