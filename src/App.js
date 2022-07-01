@@ -37,6 +37,9 @@ function App() {
         <Route path="/nations/water">
           <NationPage characters={characters} nationClicked={nationData.water} />
         </Route>
+        <Route path="/nations/earth">
+          <NationPage characters={characters} nationClicked={nationData.earth} />
+        </Route>
         <Route exact path="/" >
           <Home />
         </Route>
