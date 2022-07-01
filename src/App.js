@@ -16,7 +16,7 @@ function App() {
         <Route path="/characters" >
           <Characters />
         </Route>
-        <Route path="/nations" >
+        <Route exact path="/nations" >
           <Nations />
         </Route>
         <Route path="/nations/fire">

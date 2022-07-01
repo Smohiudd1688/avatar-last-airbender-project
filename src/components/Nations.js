@@ -1,10 +1,17 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 function Nations() {
+    const history = useHistory();
+
+    function handleFireClick() {
+        history.push("/nations/fire");
+    }
+
     return(
         <div className="nations">
             <div className="firstRow">
-                <div id="fireN" className="firstColumn">
+                <div onClick={handleFireClick}  id="fireN" className="firstColumn">
                     <h2>Fire Nation</h2>
                     <img
                         alt="Fire Nation Army"
@@ -12,7 +19,7 @@ function Nations() {
                     />
                     <p>The Fire Nation is one of the world's four nations and five sovereign states. It is an absolute monarchy led by the Fire Lord and home to most firebenders. Geographically, the nation is located along the planet's equator in the western hemisphere and is composed of several islands, named the Fire Islands. Its capital is simply known as the Fire Nation Capital. The people of the Fire Nation are referred to as "Fire Nationals".</p>
                     <div className="overlay">
-                        <div className="text">Go To Nation Page</div>
+                        <div className="text">More Details</div>
                     </div>
                 </div>
                 <div id="airN" className="secondColumn">
@@ -23,7 +30,7 @@ function Nations() {
                     />
                     <p>Air Nomads is the collective term for the monastic order of men and women who practice the discipline of airbending and the pacifistic ethics of their theocratic society. One of the four nations, the Air Nomads were wanderers by definition, but had four air temples, one located at each corner of the globe, found atop mountain ranges and under cliffs, in the northern Earth Kingdom and on three remote islands, all of which were hard for outsiders to reach.</p>
                     <div className="overlay">
-                        <div className="text">Go To Nation Page</div>
+                        <div className="text">More Details</div>
                     </div>
                 </div>
             </div>
@@ -36,7 +43,7 @@ function Nations() {
                     />
                     <p>The Water Tribe is one of the original four nations and its citizens primarily inhabit the northern and southernmost regions of the globe, near both poles. It is also a collective term for the nation of people who practice the art of waterbending. The people of the Water Tribe are generally peaceful, and strive to live in harmony with nature and the other nations of the world.</p>
                     <div className="overlay">
-                        <div className="text">Go To Nation Page</div>
+                        <div className="text">More Details</div>
                     </div>
                 </div>
                 <div id="earthN" className="secondColumn">
@@ -46,7 +53,7 @@ function Nations() {
                     />
                     <p>The Earth Kingdom is one of the world's four nations. Spanning most of a continent as well as several subsidiary islands, it is the largest and most populated sovereignty in the world and encompasses much of the eastern hemisphere. The kingdom operates as a monarchy under the rule of a single Earth Monarch, although the power of its rulers has historically greatly fluctuated.</p>
                     <div className="overlay">
-                        <div className="text">Go To Nation Page</div>
+                        <div className="text">More Details</div>
                     </div>
                 </div>
             </div>
