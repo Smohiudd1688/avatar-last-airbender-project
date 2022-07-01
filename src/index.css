@@ -24,11 +24,8 @@ code {
 
 .headerPics {
   mix-blend-mode: multiply;
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
-#logo {
+  margin-left: 4%;
+  margin-right: 4%;
   cursor: grab;
 }
 
