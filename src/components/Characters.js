@@ -2,15 +2,8 @@ import React, { useEffect, useState } from "react";
 import CharacterItem from "./CharacterItem";
 import CharacterForm from "../CharacterForm";
 
-function Characters() {
-    const [characters, setCharacters] = useState([]);
+function Characters({characters, setCharacters}) {
     const [showForm, setShowForm] = useState(false);
-
-    useEffect(() => {
-        fetch("http://localhost:3001/characters")
-        .then(response => response.json())
-        .then(data => setCharacters(data));
-    }, []);
 
     const renderCharacters = characters.map(character => {
         return <CharacterItem

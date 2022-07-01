@@ -255,5 +255,9 @@ textarea {
   opacity: .7;
 }
 
+.firePage {
+  background-image: linear-gradient(white, rgb(100, 7, 7));
+}
+
 
 
