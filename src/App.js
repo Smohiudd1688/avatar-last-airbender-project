@@ -22,13 +22,13 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/characters" >
-          <Characters characters={characters} />
+          <Characters characters={characters} setCharacters={setCharacters} />
         </Route>
         <Route exact path="/nations" >
           <Nations />
         </Route>
         <Route path="/nations/fire">
-          <FireNation characters={characters} setCharacters={setCharacters} />
+          <FireNation characters={characters} />
         </Route>
         <Route exact path="/" >
           <Home />
