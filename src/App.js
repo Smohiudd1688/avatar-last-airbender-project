@@ -5,11 +5,12 @@ import NavBar from "./components/NavBar";
 import Characters from "./components/Characters";
 import Nations from "./components/Nations";
 import Home from "./components/Home";
-import FireNation from "./components/FireNation";
+import NationPage from "./components/NationPage";
+import {nationData} from "./components/NationData"
 
 function App() {
   const [characters, setCharacters] = useState([]);
-
+  console.log(nationData);
   useEffect(() => {
     fetch("http://localhost:3001/characters")
     .then(response => response.json())
@@ -28,7 +29,7 @@ function App() {
           <Nations />
         </Route>
         <Route path="/nations/fire">
-          <FireNation characters={characters} />
+          <NationPage characters={characters} nationClicked={nationData.fire} />
         </Route>
         <Route exact path="/" >
           <Home />
