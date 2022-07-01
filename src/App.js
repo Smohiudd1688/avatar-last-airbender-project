@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Characters from "./components/Characters";
 import Nations from "./components/Nations";
 import Home from "./components/Home";
+import FireNation from "./components/FireNation";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/nations" >
           <Nations />
+        </Route>
+        <Route path="/nations/fire">
+          <FireNation />
         </Route>
         <Route exact path="/" >
           <Home />
