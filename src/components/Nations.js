@@ -8,6 +8,10 @@ function Nations() {
         history.push("/nations/fire");
     }
 
+    function handleAirClick() {
+        history.push("/nations/air");
+    }
+
     return(
         <div className="nations">
             <div className="firstRow">
@@ -22,7 +26,7 @@ function Nations() {
                         <div className="text">More Details</div>
                     </div>
                 </div>
-                <div id="airN" className="secondColumn">
+                <div onClick={handleAirClick} id="airN" className="secondColumn">
                     <h2>Air Nomads</h2>
                     <img
                         alt="Air Temple"

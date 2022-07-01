@@ -3,7 +3,7 @@ import React from "react";
 import CharacterItem from "./CharacterItem";
 
 function NationPage({characters, nationClicked}) {
-    const {nation, origin, originImage, avatar, avatarImage} = nationClicked;
+    const {nation, classN, origin, originImage, avatar, avatarImage} = nationClicked;
 
     const fireCharacters = characters.filter(character => {
         return character.nation === nation
@@ -21,7 +21,7 @@ function NationPage({characters, nationClicked}) {
     });
 
     return(
-        <div className="firePage">
+        <div className={classN}>
             <h1 className="nationHeaders">{nation} Nation</h1>
             <h1 className="pageHeaders">Origin</h1>
             <div className="info">

@@ -31,6 +31,9 @@ function App() {
         <Route path="/nations/fire">
           <NationPage characters={characters} nationClicked={nationData.fire} />
         </Route>
+        <Route path="/nations/air">
+          <NationPage characters={characters} nationClicked={nationData.air} />
+        </Route>
         <Route exact path="/" >
           <Home />
         </Route>
