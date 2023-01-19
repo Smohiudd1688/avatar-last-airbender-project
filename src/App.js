@@ -12,7 +12,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/characters")
+    fetch("http://localhost:3000/characters")
     .then(response => response.json())
     .then(data => setCharacters(data));
   }, []);

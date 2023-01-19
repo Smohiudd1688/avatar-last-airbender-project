@@ -142,11 +142,10 @@ form {
   align-content: center;
   text-align: center;
   width: 40%;
-  background-color: #a4988b;
+  background-color: #a4988b9c;
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 3%;
-  opacity: 0.6;
 }
 
 textarea {

@@ -39,7 +39,7 @@ function CharacterForm({onNewCharacterSubmit, setShowForm}) {
             about: about
         }
 
-        fetch("http://localhost:3001/characters", {
+        fetch("http://localhost:3000/characters", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
