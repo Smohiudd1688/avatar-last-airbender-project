@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/avatar-last-airbender-project/static/css/main.53cb34bb.css",
+    "main.js": "/avatar-last-airbender-project/static/js/main.fb18fe52.js",
+    "index.html": "/avatar-last-airbender-project/index.html",
+    "main.53cb34bb.css.map": "/avatar-last-airbender-project/static/css/main.53cb34bb.css.map",
+    "main.fb18fe52.js.map": "/avatar-last-airbender-project/static/js/main.fb18fe52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53cb34bb.css",
+    "static/js/main.fb18fe52.js"
+  ]
+}
